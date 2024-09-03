@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Flexbox container for main content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Table section */
+        .table-section {
+            flex: 1; /* Takes up available space */
+        }
+
+        /* Top Teams section */
+        .teams-section {
+            flex: 1; /* Takes up available space */
+        }
+
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Styling for team cards */
+        .team-card {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .team-card img {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>World Cup Database</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="Years.html">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Table Section -->
+        <div class="table-section">
+            <h1> Top Goal Scores</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Matches</th>
+                        <th>Goals</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miroslav Klose</td>
+                        <td>24</td>
+                        <td>16</td>
+                        <td><img src="/img/small_800px-Flag_of_Germany.svg.png" alt="FIFA World Cup Qatar" width="50">Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Ronaldo</td>
+                        <td>19</td>
+                        <td>15</td>
+                        <td><img src="/img/small_720px-Flag_of_Brazil.svg.png" alt="FIFA World Cup Qatar" width="50">Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>Gerd Muller</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td><img src="/img/small_800px-Flag_of_Germany.svg.png" alt="FIFA World Cup Qatar" width="50">Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>26</td>
+                        <td>13</td>
+                        <td><img src="/img/small_800px-Flag_of_Argentina.svg.png" alt="FIFA World Cup Qatar" width="50">Argentina</td>
+                    </tr>
+                    <tr>
+                        <td>Pele</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td><img src="/img/small_720px-Flag_of_Brazil.svg.png" alt="FIFA World Cup Qatar" width="50">Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>Kylian Mbappé</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td><img src="/img/small_800px-Flag_of_France.svg.png" alt="FIFA World Cup Qatar" width="50">Frace</td>
+                    </tr>
+                    <tr>
+                        <td>Gary Lineker</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td><img src="/img/small_800px-Flag_of_England.svg.png" alt="FIFA World Cup Qatar" width="50">England</td>
+                    </tr>
+                    <tr>
+                        <td>Eusebio</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td><img src="/img/small_Flag_of_Portugal.svg.png" alt="FIFA World Cup Qatar" width="50">Portugal</td>
+                    </tr>
+                    <tr>
+                        <td>David Villa</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td><img src="/img/small_750px-Flag_of_Spain.svg.png" alt="FIFA World Cup Qatar" width="50">Spain</td>
+                    </tr>
+                    <tr>
+                        <td>Rivaldo</td>
+                        <td>14</td>
+                        <td>8</td>
+                        <td><img src="/img/small_720px-Flag_of_Brazil.svg.png" alt="FIFA World Cup Qatar" width="50">Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>Deigo Maradona</td>
+                        <td>21</td>
+                        <td>8</td>
+                        <td><img src="/img/small_800px-Flag_of_Argentina.svg.png" alt="FIFA World Cup Qatar" width="50">Argentina</td>
+                    </tr>
+                    <tr>
+                        <td>Thierry Henry</td>
+                        <td>17</td>
+                        <td>6</td>
+                        <td><img src="/img/small_800px-Flag_of_France.svg.png" alt="FIFA World Cup Qatar" width="50">France</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Top Teams Section -->
+        <div class="teams-section">
+            <h2>Top Teams</h2>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_720px-Flag_of_Brazil.svg.png">
+                <div class="text">
+                    <h3>Brazil</h3>
+                    <p>Wins: 5</p>
+                    <p>Finals: 7</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Germany.svg.png">
+                <div class="text">
+                    <h3>Germany</h3>
+                    <p>Wins: 4</p>
+                    <p>Finals: 8</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Italy.svg.png">
+                <div class="text">
+                    <h3>Italy</h3>
+                    <p>Wins: 4</p>
+                    <p>Finals: 6</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Argentina.svg.png">
+                <div class="text">
+                    <h3>Argentina</h3>
+                    <p>Wins: 3</p>
+                    <p>Finals: 6</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_France.svg.png">
+                <div class="text">
+                    <h3>France</h3>
+                    <p>Wins: 2</p>
+                    <p>Finals: 4</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/Flag_of_Uruguay.svg (1).webp">
+                <div class="text">
+                    <h3>Uruguay</h3>
+                    <p>Wins: 2</p>
+                    <p>Finals: 2</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_England.svg.png">
+                <div class="text">
+                    <h3>England</h3>
+                    <p>Wins: 1</p>
+                    <p>Finals: 1</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_750px-Flag_of_Spain.svg.png">
+                <div class="text">
+                    <h3>Spain</h3>
+                    <p>Wins: 1</p>
+                    <p>Finals: 1</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_the_Netherlands.svg.png">
+                <div class="text">
+                    <h3>Netherlands</h3>
+                    <p>Wins: 0</p>
+                    <p>Finals: 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 World Cup Database. All rights reserved.</p>
+    </footer>
+</body>
+</html>
