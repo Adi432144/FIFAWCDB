@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Movements of FIFA World Cup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #004d99;
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .world-cup-section {
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .world-cup-section:hover {
+            transform: scale(1.02);
+        }
+        .world-cup-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+        .world-cup-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .world-cup-section h2 {
+            color: #007bff;
+            font-size: 2em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .movement-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .movement {
+            background-color: #f9f9f9;
+            border: 1px solid #e1e1e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .movement:hover {
+            background-color: #e7f3ff;
+            transform: translateX(5px);
+        }
+        .movement img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .movement p {
+            margin: 10px 0;
+        }
+        .movement strong {
+            color: #0056b3;
+        }
+        .movement-time {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .button {
+            display: inline-block;
+            background-color: #004d99;
+            color: white;
+            padding: 12px 30px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #003366;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<header class="header">
+    <div class="header-content">
+        <img src="/img/Leonardo_Phoenix_A_colorful_modern_and_dynamic_icon_depicting_3-removebg-preview.png" alt="World Cup Icon">
+        <h1>FIFA World Cup DB</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="/Teams.html" style="text-decoration: none;">Teams</a></li>
+                <li><a href="/famous.html"style="text-decoration: none;">Famous</a></li>
+                <li><a href="History.html"style="text-decoration: none;">History</a></li>
+                <li><a href="/contact.html"style="text-decoration: none;">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <h1>Famous Movements of FIFA World Cup</h1>
+
+    <div class="container">
+        <!-- 1930 FIFA World Cup -->
+        <div class="world-cup-section">
+            <img src="img/Uruguay_1930_World_Cup.jpg" alt="1930 World Cup Logo" class="world-cup-logo">
+            <div class="world-cup-info">
+                <h2>1930 FIFA World Cup</h2>
+                <ul class="movement-list">
+                    <li class="movement">
+                        <img src="img/Flag_of_Uruguay.svg.webp" alt="Uruguay Logo">
+                        <div>
+                            <p><strong>Famous Moment:</strong> The first-ever World Cup match, Uruguay vs. Argentina (4:2)</p>
+                            <p><strong>Details:</strong> Uruguay defeated Argentina in the inaugural World Cup match, marking the start of World Cup history.</p>
+                            <p class="movement-time"><strong>Time:</strong> July 30, 1930</p>
+                            <a href="match-details.html?wc=1930&match=1" class="button">View Match Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 1950 FIFA World Cup -->
+        <div class="world-cup-section">
+            <img src="img/Poster_-_World_Cup_1950.jpg" alt="1950 World Cup Logo" class="world-cup-logo">
+            <div class="world-cup-info">
+                <h2>1950 FIFA World Cup</h2>
+                <ul class="movement-list">
+                    <li class="movement">
+                        <img src="img/small_720px-Flag_of_Brazil.svg.png" alt="Brazil Logo">
+                        <div>
+                            <p><strong>Famous Moment:</strong> The Maracanazo – Brazil vs. Uruguay (1:2)</p>
+                            <p><strong>Details:</strong> Uruguay caused one of the biggest upsets in World Cup history by defeating Brazil in the final at the Maracanã, clinching their second World Cup title.</p>
+                            <p class="movement-time"><strong>Time:</strong> July 16, 1950</p>
+                            <a href="match-details.html?wc=1950&match=1" class="button">View Match Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- 1998 FIFA World Cup -->
+        <div class="world-cup-section">
+            <img src="img/1998_FIFA_World_Cup.svg.png" alt="1998 World Cup Logo" class="world-cup-logo">
+            <div class="world-cup-info">
+                <h2>1998 FIFA World Cup</h2>
+                <ul class="movement-list">
+                    <li class="movement">
+                        <img src="img/small_800px-Flag_of_France.svg.png" alt="France Logo">
+                        <div>
+                            <p><strong>Famous Moment:</strong> Zinedine Zidane's two goals in the final – France vs. Brazil (3:0)</p>
+                            <p><strong>Details:</strong> Zidane's brace helped France win their first World Cup title on home soil in a dominant performance over Brazil.</p>
+                            <p class="movement-time"><strong>Time:</strong> July 12, 1998</p>
+                            <a href="match-details.html?wc=1998&match=1" class="button">View Match Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2006 FIFA World Cup -->
+<div class="world-cup-section">
+    <img src="img/wm06.png" alt="2006 World Cup Logo" class="world-cup-logo">
+    <div class="world-cup-info">
+        <h2>2006 FIFA World Cup</h2>
+        <ul class="movement-list">
+            <li class="movement">
+                <img src="img/small_800px-Flag_of_France.svg.png" alt="France Logo">
+                <div>
+                    <p><strong>Famous Moment:</strong> Zinedine Zidane’s Headbutt – France vs. Italy (1:1, Italy won on penalties)</p>
+                    <p><strong>Details:</strong> Zinedine Zidane was sent off in the final for headbutting Italian defender Marco Materazzi after an exchange of words, marking a controversial end to his career.</p>
+                    <p class="movement-time"><strong>Time:</strong> July 9, 2006</p>
+                    <a href="match-details.html?wc=2006&match=1" class="button">View Match Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <!-- 2014 FIFA World Cup -->
+        <div class="world-cup-section">
+            <img src="img/2014_FIFA_World_Cup.svg.png" alt="2014 World Cup Logo" class="world-cup-logo">
+            <div class="world-cup-info">
+                <h2>2014 FIFA World Cup</h2>
+                <ul class="movement-list">
+                    <li class="movement">
+                        <img src="img/small_800px-Flag_of_Germany.svg.png" alt="Germany Logo">
+                        <div>
+                            <p><strong>Famous Moment:</strong> Germany's 7:1 victory over Brazil in the semifinals</p>
+                            <p><strong>Details:</strong> One of the most shocking and memorable moments in World Cup history, Germany humiliated Brazil 7-1 in their own country during the semifinals.</p>
+                            <p class="movement-time"><strong>Time:</strong> July 8, 2014</p>
+                            <a href="matches/Brazil 2014/Brazil 2014 Semi-final.html" class="button">View Match Details</a>
+                        </div>
+                    </li>
+                    <li class="movement">
+                        <img src="img/small_800px-Flag_of_Germany.svg.png" alt="Germany Logo">
+                        <div>
+                            <p><strong>Famous Moment:</strong> Mario Götze's extra-time goal – Germany vs. Argentina (1:0, AET)</p>
+                            <p><strong>Details:</strong> Götze scored the winning goal in the 113th minute to secure Germany's fourth World Cup title against Argentina in the 2014 final.</p>
+                            <p class="movement-time"><strong>Time:</strong> July 13, 2014</p>
+                            <a href="/matches/Brazil 2014/Brazil 2014 Final.html" class="button">View Match Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2018 FIFA World Cup -->
+<div class="world-cup-section">
+    <img src="img/wm18.png" alt="2018 World Cup Logo" class="world-cup-logo">
+    <div class="world-cup-info">
+        <h2>2018 FIFA World Cup</h2>
+        <ul class="movement-list">
+            <li class="movement">
+                <img src="img/small_800px-Flag_of_France.svg.png" alt="France Logo">
+                <div>
+                    <p><strong>Famous Moment:</strong> France’s Victory Over Croatia in the Final – France vs. Croatia (4:2)</p>
+                    <p><strong>Details:</strong> France secured their second World Cup title with a thrilling 4-2 victory over Croatia in a high-scoring final.</p>
+                    <p class="movement-time"><strong>Time:</strong> July 15, 2018</p>
+                    <a href="match-details.html?wc=2018&match=1" class="button">View Match Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FIFA World Cup Database | All rights reserved</p>
+    </footer>
+</body>
+</html>

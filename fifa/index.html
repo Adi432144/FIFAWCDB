@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Cup Database</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="stylesheet" href="/styles.css">
     <style>
         /* Flexbox container for main content */
         .main-content {
@@ -18,12 +18,12 @@
 
         /* Table section */
         .table-section {
-            flex: 1; /* Takes up available space */
+            flex: 1;
         }
 
         /* Top Teams section */
         .teams-section {
-            flex: 1; /* Takes up available space */
+            flex: 1;
         }
 
         /* Styling for the table */
@@ -43,41 +43,82 @@
             background-color: #f2f2f2;
         }
 
-        /* Styling for team cards */
+        /* Team card styling */
         .team-card {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f9f9f9;
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
             border-radius: 5px;
-            display: flex;
-            align-items: center;
+            margin-bottom: 20px;
         }
 
-        .team-card img {
-            margin-right: 15px;
+        .team-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .team-card:hover .team-details {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header and footer styling */
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .header img {
+            height: 100px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header class="header">
-        <h1>World Cup Database</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="Teams.html">Teams</a></li>
-                <li><a href="#">Matches</a></li>
-                <li><a href="Years.html">History</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="/img/Leonardo_Phoenix_A_colorful_modern_and_dynamic_icon_depicting_3-removebg-preview.png" alt="World Cup Icon">
+            <h1>FIFA World Cup DB</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html" style="text-decoration: none;">Home</a></li>
+                    <li><a href="/nav/Teams.html" style="text-decoration: none;">Teams</a></li>
+                    <li><a href="/nav/famous.html"style="text-decoration: none;">Famous</a></li>
+                    <li><a href="/nav/History.html"style="text-decoration: none;">History</a></li>
+                    <li><a href="/nav/contact.html"style="text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content Section -->
     <div class="main-content">
         <!-- Table Section -->
         <div class="table-section">
-            <h1> Top Goal Scores</h1>
+            <h1>Top Goal Scorers</h1>
             <table>
                 <thead>
                     <tr>
@@ -92,10 +133,9 @@
                         <td>Miroslav Klose</td>
                         <td>24</td>
                         <td>16</td>
-                        <td><img src="/img/small_800px-Flag_of_Germany.svg.png" alt="FIFA World Cup Qatar" width="50">Germany</td>
+                        <td><img src="/img/small_800px-Flag_of_Germany.svg.png" width="50">Germany</td>
                     </tr>
-                    <tr>
-                        <td>Ronaldo</td>
+                    <td>Ronaldo</td>
                         <td>19</td>
                         <td>15</td>
                         <td><img src="/img/small_720px-Flag_of_Brazil.svg.png" alt="FIFA World Cup Qatar" width="50">Brazil</td>
@@ -160,6 +200,7 @@
                         <td>6</td>
                         <td><img src="/img/small_800px-Flag_of_France.svg.png" alt="FIFA World Cup Qatar" width="50">France</td>
                     </tr>
+                    <!-- Add more rows as needed -->
                 </tbody>
             </table>
         </div>
@@ -167,73 +208,107 @@
         <!-- Top Teams Section -->
         <div class="teams-section">
             <h2>Top Teams</h2>
+            <!-- Team Card Example -->
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_720px-Flag_of_Brazil.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Brazil waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Brazil</h3>
                     <p>Wins: 5</p>
                     <p>Finals: 7</p>
                 </div>
             </div>
+            <!-- Repeat the team card for each team -->
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Germany.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Germany waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Germany</h3>
                     <p>Wins: 4</p>
                     <p>Finals: 8</p>
                 </div>
             </div>
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Italy.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Italy waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Italy</h3>
                     <p>Wins: 4</p>
                     <p>Finals: 6</p>
                 </div>
             </div>
+            
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_Argentina.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Argentina waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Argentina</h3>
                     <p>Wins: 3</p>
                     <p>Finals: 6</p>
                 </div>
             </div>
+            
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_France.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/France waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>France</h3>
                     <p>Wins: 2</p>
                     <p>Finals: 4</p>
                 </div>
             </div>
+            
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/Flag_of_Uruguay.svg (1).webp">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Uruguay waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Uruguay</h3>
                     <p>Wins: 2</p>
                     <p>Finals: 2</p>
                 </div>
             </div>
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_England.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/vecteezy_england-flag-seamless-loop-animation-the-national-flag-of_18976836.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>England</h3>
                     <p>Wins: 1</p>
                     <p>Finals: 1</p>
                 </div>
             </div>
+            
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_750px-Flag_of_Spain.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Spain waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Spain</h3>
                     <p>Wins: 1</p>
                     <p>Finals: 1</p>
                 </div>
             </div>
+            
             <div class="team-card">
-                <img height="45px" class="img-fluid" src="/img/small_800px-Flag_of_the_Netherlands.svg.png">
-                <div class="text">
+                <video autoplay loop muted class="team-video">
+                    <source src="/video/Netherland waving.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="team-details">
                     <h3>Netherlands</h3>
                     <p>Wins: 0</p>
                     <p>Finals: 3</p>
@@ -247,4 +322,3 @@
         <p>&copy; 2024 World Cup Database. All rights reserved.</p>
     </footer>
 </body>
-</html>

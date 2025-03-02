@@ -1,0 +1,159 @@
+<table border="1">
+    <link rel="stylesheet" href="/matches/match.css">
+    <thead>
+        <tr>
+            <th>Final</th>
+            <th>Flag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Italy</td>
+            <td><img src="/img/small_800px-Flag_of_Italy.svg.png" alt="Qatar Flag" width="50"></td>
+        </tr>
+        <tr>
+            <td>Czeck Republic</td>
+            <td><img src="/img/Flag_of_the_Czech_Republic.svg.webp" alt="Ecuador Flag" width="50"></td>
+        </tr>
+    </tbody>
+</table>
+<h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Matches</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Matches</title>
+    <style>
+        select, input {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Match</th>
+                <th>Date</th>
+                <th>Team 1</th>
+                <th>Score</th>
+                <th>Team 2</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Argentina vs France</td>
+                <td>December 18, 2022</td>
+                <td>Argentina</td>
+                <td>7 : 5 on penalties</td>
+                <td>France</td>
+                <td>
+                    <p>Argentina: Lionel Messi 23', 108', Ángel Di María 36'</p>
+                    <p>France: Kylian Mbappé 80', 81', 118'</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        /* Style for centering the button */
+        body {
+            display:grid;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Button styling */
+        .animated-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Hover effect */
+        .animated-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); /* Scale up the button slightly */
+        }
+        .container{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        #myImage {
+            display:flex; /* Hidden by default */
+            margin-top: 20px;
+            width: 200px;
+        }
+        #showButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <button id="showButton">Winner</button>
+
+    <!-- Hidden image -->
+    <div class="container">
+        <img id="myImage" src="/img/cup lift/Italy-1934 cup lift.webp" alt="Displayed Image">
+    </div>
+    <!-- Sound file -->
+    <audio id="mySound" src="/sound/firework_single-83058.mp3"></audio>
+
+    <script>
+        // Get the button, image, and sound elements
+        const button = document.getElementById("showButton");
+        const image = document.getElementById("myImage");
+        const sound = document.getElementById("mySound");
+
+        // Add click event listener to the button
+        button.addEventListener("click", function() {
+            // Display the image
+            image.style.display = "block";
+            
+            // Play the sound
+            sound.play();
+        });
+        window.addEventListener("load", function() {
+            image.style.display = "none";
+        });
+    </script>
+   <div style="display: grid; justify-content: center;align-items: center; ">
+        <a class="btn" href="http://127.0.0.1:5500/index.html"style="text-decoration: none;">Home</a>
+    </div>
+    <div style="display: grid; justify-content: center;align-items: center; text-decoration: none;">
+        <a class="btn" href="FIFA World Cup 2022.html" style="text-decoration: none;"> FIFA World Cup 2022</a>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 FIFA World Cup Database. All rights reserved.</p>
+    </footer>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        >
+    </script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous">
+    </script>
+</body>    
+
